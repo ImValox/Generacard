@@ -1,0 +1,206 @@
+.sidebar {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget {
+  padding: 0.75rem 1.25rem;
+  width: 800px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.widget h2 {
+  background-color: whitesmoke;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  margin-top: -0.75rem;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+  padding: 0.75rem 1.25rem;
+  text-align: center;
+  cursor: default;
+}
+.widget form label {
+  width: 100%;
+  text-align: center;
+}
+.widget:hover h2 {
+  background-color: #ebebeb;
+}
+
+.green {
+  background-color: green;
+}
+
+.text-blue {
+  color: #0275d8;
+}
+
+.file-add {
+  margin-left: 10px;
+  float: right;
+  font-size: 20px;
+}
+
+
+#questions_min, #questions_max {
+  width: 3em;
+  margin-left: -1.5em;
+  height: 1.6em;
+  top: 50%;
+  margin-top: -0.8em;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.synthese-item {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #0275d8;
+  color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.synthese-item:hover {
+  background-color: #0185f8;
+}
+
+.synthese-item:active {
+  background-color: #0185f8;
+}
+
+.synthese-item:focus {
+  outline: none;
+}
+
+.number {
+  margin-right: 5px;
+}
+
+.close {
+  margin-top: -6%;
+  cursor: pointer;
+  color: #ffffff;
+}
+.close:hover {
+  cursor: pointer;
+  color: red;
+}
+
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Header */
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #333;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 0;
+}
+#large-header {
+  position: relative;
+  background-image: url("../img/pc.jpg");
+}
+
+#large-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Couleur de calque avec opacité */
+  z-index: -1;
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+.demo-1 .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
+}
+.main-title .thin {
+  font-weight: 200;
+}
+@media only screen and (max-width: 768px) {
+  .demo-1 .main-title {
+    font-size: 3em;
+  }
+}
+
+#demo-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Animation de disparition */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* Animation de réapparition */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: inline;
+  }
+}
+
+/* Appliquer l'animation au span */
+span {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+/* Animation de disparition */
+span.fade-out {
+  animation-name: fadeOut;
+}
+
+/* Animation de réapparition */
+span.fade-in {
+  animation-name: fadeIn;
+}

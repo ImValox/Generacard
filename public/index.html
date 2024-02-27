@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>GENERACARD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css'>
+  <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div id="large-header" class="large-header">
+    <canvas id="demo-canvas"></canvas>
+    <div class="sidebar">
+      <div class="widget user_widget_search">
+        <h2>GENERACARD</h2>
+        <a href="edit.html"><i class="fa fa-file file-add"></i></a>
+        <div class="form-group">
+          <label>Nom du fichier</label>
+          <input type="text" class="form-control" id="nameInput" placeholder="Nom du fichier" required>
+        </div>
+
+        <div class="form-group">
+          <label for="classeSelect">Niveau</label>
+          <select id="classeSelect" class="form-control custom-select">
+            <option value="3">Niveau 3</option>
+            <option value="4">Niveau 4</option>
+          </select>
+
+        </div>
+
+        <div class="form-group">
+          <label for="syntheseSelect">Synthèse<div id="errorContainer"></div></label>
+          <input class="form-control" style="width: 28%;" id="syntheseInput" placeholder="Numéro de Synthèse">
+        </div>
+        <ul id="syntheseList" style="padding-left: 0px;"></ul>
+
+
+        <div class="form-group">
+          <label>Nombre de questions</label>
+          <div id="questions">
+            <div id="questions_min" class="ui-slider-handle"></div>
+            <div id="questions_max" class="ui-slider-handle"></div>
+          </div>
+          <input type="hidden" id="questions_list_min" name="questions_list_min" />
+          <input type="hidden" id="questions_list_max" name="questions_list_max" />
+        </div>
+        <div class="form-group">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="selectedAllFolder">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description text-blue"><b>Tout sélectionner</b></span>
+          </label>
+          <div id="folderList"></div>
+        </div>
+        <div class="form-group">
+          <button id="downloadButton" type="submit" class="btn btn-block btn-primary">Télécharger</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+  <script src="js/script.js"></script>
+  <script src="js/filter.js"></script>
+  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
+  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
+  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script>
+  <script  src="js/background.js"></script>
+
+</body>
+
+</html>

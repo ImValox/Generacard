@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>GENERACARD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css'>
+  <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="large-header" class="large-header">
+    <canvas id="demo-canvas"></canvas>
+    <!-- partial:index.partial.html -->
+    <div class="sidebar">
+      <div class="widget user_widget_search">
+        <h2>GENERACARD</h2>
+        <a href="index.html"><i class="fa fa-download file-add"></i></a>
+        <div class="form-group">
+          <label>Nom de la Synthèse</label>
+          <input class="form-control" id="searchInput" placeholder="Synthèse 1 des 5ème">
+        </div>
+        <div class="form-group">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="selectedAllFolder">
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description text-blue"><b>Tout sélectionner</b></span>
+          </label>
+          <div id="folderList"></div>
+        </div>
+        <div class="form-group">
+          <button id="deleteSelectedFolders" type="submit" class="btn btn-block btn-primary red file-remove"><i
+              class="fas fa-trash-alt"></i></button>
+        </div>
+        <div class="form-group"></div>
+        <input id="fileInput" type="file" multiple style="display: none;">
+        <button id="addFolders" class="btn btn-block btn-primary red file-add" type="button">
+          <i class="fas fa-file-archive"></i>
+        </button>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+  <script src='js/script.js'></script>
+  <script src='js/file.js'></script>
+  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
+  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
+  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script><script  src="js/background.js"></script>
+</body>
+
+</html>
